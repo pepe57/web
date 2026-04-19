@@ -68,6 +68,11 @@
         <div class="flex flex-wrap gap-2 mt-5">
             {% for tag in tags %}<a title="{{ tag.displayTitle }}" target="_blank" href="https://medium.com/tag/{{ tag.normalizedTagSlug }}"><span class="px-2 py-1 text-xs text-green-500 bg-green-100 rounded-full">#{{ tag.normalizedTagSlug }}</span></a>{% endfor %}
         </div>
+        <div class="mt-8 font-sans">
+            <p class="pb-3 text-base font-bold text-green-500 md:text-sm">
+                <a href="{{ url }}" class="text-sm font-bold text-green-500 no-underline md:text-sm hover:underline ">&lt; Go to the original</a>
+            </p>
+        </div>
         <div class="container w-full pt-12 mx-auto md:max-w-3xl"></div>
     </div>
     <style>
